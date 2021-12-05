@@ -2,18 +2,20 @@ import { createWebHistory, createRouter } from "vue-router";
 import List from './components/List.vue';
 import Home from './components/Home.vue';
 import Detail from './components/Detail.vue';
+import Author from './components/Author.vue';
+import Comment from './components/Comment.vue';
 const routes = [
   {
     path: "/detail/:id(\\d+)",  //(\\d+) 숫자만 받도록 하는 정규식
     component: Detail,
     children: [
       {
-        path: "/author",
-        component: Author.vue,
+        path: "author",
+        component: Author,
       },
       {
-        path: "/comment",
-        component: Comment.vue,
+        path: "comment",
+        component: Comment,
       },
     ]
   },
