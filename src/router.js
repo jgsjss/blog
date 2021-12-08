@@ -4,6 +4,7 @@ import Home from './components/Home.vue';
 import Detail from './components/Detail.vue';
 import Author from './components/Author.vue';
 import Comment from './components/Comment.vue';
+import About from './components/About.vue';
 const routes = [
   {
     path: "/detail/:id(\\d+)",  //(\\d+) 숫자만 받도록 하는 정규식
@@ -24,8 +25,12 @@ const routes = [
     component: List,
   },
   {
-      path: "/",
-      component: Home,
+    path: "/",
+    component: Home,
+  },
+  {
+    path: "/about",
+    component: About,
   },
 ];
 
@@ -34,4 +39,4 @@ const router = createRouter({
   routes,
 });
 
-export default router; 
+export default router;
