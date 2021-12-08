@@ -11,30 +11,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">{{ Blogs[0].number }}</th>
-          <td>{{ Blogs[0].writer }}</td>
-          <td @click="$router.push('/detail/0')">{{ Blogs[0].title }}</td>
-          <td>{{ Blogs[0].date }}</td>
-        </tr>
-
-        <tr>
-          <th scope="row">{{ Blogs[1].number }}</th>
-          <td>{{ Blogs[1].writer }}</td>
-          <td @click="$router.push('/detail/1')">{{ Blogs[1].title }}</td>
-          <td>{{ Blogs[1].date }}</td>
-        </tr>
-        <tr>
-          <th scope="row">{{ Blogs[2].number }}</th>
-          <td>{{ Blogs[2].writer }}</td>
-          <td @click="$router.push('/detail/2')">{{ Blogs[2].title }}</td>
-          <td>{{ Blogs[2].date }}</td>
-        </tr>
-        <tr>
-          <th scope="row">{{ Blogs[3].number }}</th>
-          <td>{{ Blogs[3].writer }}</td>
-          <td @click="$router.push('/detail/3')">{{ Blogs[3].title }}</td>
-          <td>{{ Blogs[3].date }}</td>
+        <tr v-for="(a, i) in Blogs" :key="i">
+          <th scope="row">{{ Blogs[i].number }}</th>
+          <td>{{ Blogs[i].writer }}</td>
+          <td @click="$router.push('/detail/' + i)">{{ Blogs[i].title }}</td>
+          <td>{{ Blogs[i].date }}</td>
         </tr>
       </tbody>
     </table>
