@@ -14,12 +14,14 @@
         <tr v-for="(a, i) in Blogs" :key="i">
           <th scope="row">{{ Blogs[i].number }}</th>
           <td>{{ Blogs[i].writer }}</td>
-          <td @click="$router.push('/detail/' + i)">{{ Blogs[i].title }}</td>
+<!--          <td @click="$router.push('/detail/' + i)">{{ Blogs[i].title }}</td>-->
+         <router-link :to="`/detail/${i}`"> <td >{{ Blogs[i].title }}</td></router-link>
           <td>{{ Blogs[i].date }}</td>
         </tr>
       </tbody>
     </table>
   </div>
+  <router-view></router-view>
 </template>
 
 <script>

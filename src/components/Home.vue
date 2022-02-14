@@ -7,8 +7,8 @@
     />
   </div>
   <div class="container mt-4">
-    <h5>Vue 개발자 jk123의 연습용 블로그 입니다.</h5>
-    <p>-- vue로 개발중입니다. --</p>
+    <h5> 개발자 jk123의 토이프로젝트 블로그 입니다.</h5>
+    <p>-- vue로 개발중입니다. 해당 프로젝트는 Vue router 연습 및 학습 내용입니다. --</p>
   </div>
 </template>
 

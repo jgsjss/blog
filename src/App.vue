@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="http://localhost:8080/">My Blog</a>
+      <router-link to="/">
+      <a class="navbar-brand">My Blog</a>
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,19 +17,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+
           <li class="nav-item">
+            <router-link to="/">
             <a
               class="nav-link active"
               aria-current="page"
-              href="http://localhost:8080/"
               >Home</a
             >
+            </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost:8080/about">about</a>
+            <router-link to="/about"><a class="nav-link">about</a></router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost:8080/list">post</a>
+            <router-link to="/list"><a class="nav-link">post</a></router-link>
           </li>
         </ul>
       </div>
