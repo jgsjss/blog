@@ -1,3 +1,3 @@
-// module.exports = {
-//     publicPath: '/vlog',
-// }
+module.exports = {
+    publicPath: '/vlog',
+}
